@@ -23,7 +23,7 @@ import io
 from openai import OpenAI
 
 # Initialize OpenAI client
-client = OpenAI()
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Your chosen model
 #MODEL = "gpt-3.5-turbo-16k" # Legacy
