@@ -1,5 +1,6 @@
 import streamlit as st
 from transformers import pipeline
+import tensor
 
 # Initialize the chatbot pipeline
 chatbot = pipeline('text-generation', model='microsoft/DialoGPT-medium')
